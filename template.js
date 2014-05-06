@@ -27,8 +27,7 @@ exports.template = function(grunt, init, done) {
             },
             scripts: {
               test: 'node ./node_modules/lab/bin/lab -v -c -p'
-            },
-            licenses: 'MIT'
+            }
         });
 
         done();
