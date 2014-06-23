@@ -5,6 +5,13 @@
 
 var internals = {};
 
-// Defaults
+exports.register = function(plugin, options, next){
+    plugin.route([
+    ]);
 
-internals.defaults = {};
+    next();
+};
+
+exports.register.attributes = {
+    pkg: require('../package.json')
+};
